@@ -49,69 +49,67 @@ border-radius: 4px;
 ::-webkit-scrollbar-track { background: var(--bg-secondary); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
-
 /* === DEMO BANNER === */
 .demo-banner {
-    background-color: var(--bg-secondary);
-    border-bottom: 1px solid var(--border);
-    padding: 12px 0;
-    position: relative;
-    z-index: 101;
+background-color: var(--bg-secondary);
+border-bottom: 1px solid var(--border);
+padding: 12px 0;
+position: relative;
+z-index: 101;
 }
 body.dark-mode .demo-banner {
-    background-color: rgba(197, 160, 89, 0.1);
+background-color: rgba(197, 160, 89, 0.1);
 }
 .demo-banner__inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-    text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 16px;
+flex-wrap: wrap;
+text-align: center;
 }
 .demo-banner__text {
-    font-size: 13px;
-    color: var(--text-main);
-    font-weight: 400;
-    line-height: 1.5;
+font-size: 13px;
+color: var(--text-main);
+font-weight: 400;
+line-height: 1.5;
 }
 .demo-banner__text i {
-    color: var(--accent);
-    margin-right: 6px;
+color: var(--accent);
+margin-right: 6px;
 }
 .demo-banner__text a {
-    color: var(--accent);
-    text-decoration: underline;
-    font-weight: 600;
-    transition: var(--transition);
+color: var(--accent);
+text-decoration: underline;
+font-weight: 600;
+transition: var(--transition);
 }
 .demo-banner__text a:hover {
-    color: var(--accent-hover);
+color: var(--accent-hover);
 }
 .demo-banner__close {
-    background: none;
-    border: none;
-    color: var(--text-muted);
-    cursor: pointer;
-    font-size: 16px;
-    padding: 4px 8px;
-    transition: var(--transition);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
+background: none;
+border: none;
+color: var(--text-muted);
+cursor: pointer;
+font-size: 16px;
+padding: 4px 8px;
+transition: var(--transition);
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 4px;
 }
 .demo-banner__close:hover {
-    background-color: var(--border);
-    color: var(--text-main);
+background-color: var(--border);
+color: var(--text-main);
 }
 @media (max-width: 768px) {
-    .demo-banner__inner {
-        flex-direction: column;
-        gap: 8px;
-    }
+.demo-banner__inner {
+flex-direction: column;
+gap: 8px;
 }
-
+}
 /* === ARTICLES SECTION === */
 .article-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; margin-top: 32px; }
 .article-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; transition: var(--transition); display: flex; flex-direction: column; }
@@ -121,7 +119,6 @@ body.dark-mode .demo-banner {
 .article-card__content { padding: 28px; flex-grow: 1; display: flex; flex-direction: column; }
 .article-card__content h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--text-main); margin-bottom: 12px; line-height: 1.3; }
 .article-card__content p { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; line-height: 1.6; flex-grow: 1; font-weight: 300; }
-
 /* === SCROLL REVEAL ANIMATION === */
 .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 .reveal.active { opacity: 1; transform: translateY(0); }
@@ -533,17 +530,16 @@ border-radius: var(--radius-sm); cursor: pointer; font-weight: 600; transition: 
 <body>
 <!-- ДЕМО БАННЕР -->
 <div id="demo-banner" class="demo-banner">
-    <div class="container demo-banner__inner">
-        <span class="demo-banner__text">
-            <i class="fa-solid fa-circle-info"></i>
-            Предупреждаем, что сайт предоставлен вам в демо-режиме. По всем вопросам обращайтесь: телефон для связи — <a href="tel:+79506748741">+7 950 674-87-41</a>; электронная почта — <a href="mailto:life_osoka@mail.ru">life_osoka@mail.ru</a>.
-        </span>
-        <button class="demo-banner__close" onclick="document.getElementById('demo-banner').style.display='none'" aria-label="Закрыть уведомление">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-    </div>
+<div class="container demo-banner__inner">
+<span class="demo-banner__text">
+<i class="fa-solid fa-circle-info"></i>
+Предупреждаем, что сайт предоставлен вам в демо-режиме. По всем вопросам обращайтесь: телефон для связи — <a href="tel:+79506748741">+7 950 674-87-41</a>; электронная почта — <a href="mailto:life_osoka@mail.ru">life_osoka@mail.ru</a>.
+</span>
+<button class="demo-banner__close" onclick="document.getElementById('demo-banner').style.display='none'" aria-label="Закрыть уведомление">
+<i class="fa-solid fa-xmark"></i>
+</button>
 </div>
-
+</div>
 <!-- ВЕРХНЯЯ ПАНЕЛЬ -->
 <div class="top-bar">
 <div class="container top-bar__inner">
@@ -631,7 +627,7 @@ border-radius: var(--radius-sm); cursor: pointer; font-weight: 600; transition: 
 <a href="#" class="btn btn--large" onclick="navigateTo('catalog-view'); return false;">Перейти в каталог <i class="fa-solid fa-arrow-right"></i></a>
 </div>
 <div class="hero-image">
-<img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=600&q=80" alt="Презентация продукции OCOKA" loading="lazy" width="600" height="450">
+<img src="https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/29301844-e6f7-4844-bf11-f2e6b85c0849.jpg" alt="Презентация продукции OCOKA" loading="lazy" width="600" height="450">
 </div>
 </div>
 <div class="features-section reveal">
@@ -744,11 +740,11 @@ border-radius: var(--radius-sm); cursor: pointer; font-weight: 600; transition: 
 <div id="checkout-view" class="checkout-view fade-in">
 <div class="page-header"><h2>Оформление заказа</h2><a class="btn-back" onclick="navigateTo('cart-view')"><i class="fa-solid fa-arrow-left"></i> Вернуться в корзину</a></div>
 <div class="about-content reveal">
-    <div class="about-warning" style="margin-top: 0; margin-bottom: 32px;">
-        <strong><i class="fa-solid fa-circle-info"></i> Важная информация:</strong>
-        Вы находитесь в демо-режиме просмотра сайта. Если вы хотите заказать товар, свяжитесь с нами.<br>
-        Контакты: телефон для связи — <a href="tel:+79506748741" style="color: var(--accent); font-weight: 600; text-decoration: underline;">+7 950 674-87-41</a>; электронная почта — <a href="mailto:life_osoka@mail.ru" style="color: var(--accent); font-weight: 600; text-decoration: underline;">life_osoka@mail.ru</a>.
-    </div>
+<div class="about-warning" style="margin-top: 0; margin-bottom: 32px;">
+<strong><i class="fa-solid fa-circle-info"></i> Важная информация:</strong>
+Вы находитесь в демо-режиме просмотра сайта. Если вы хотите заказать товар, свяжитесь с нами.<br>
+Контакты: телефон для связи — <a href="tel:+79506748741" style="color: var(--accent); font-weight: 600; text-decoration: underline;">+7 950 674-87-41</a>; электронная почта — <a href="mailto:life_osoka@mail.ru" style="color: var(--accent); font-weight: 600; text-decoration: underline;">life_osoka@mail.ru</a>.
+</div>
 <h3>Данные для доставки</h3>
 <form id="checkout-form" style="max-width: 600px; margin-top: 32px;" onsubmit="handleCheckout(event)">
 <div class="form-group"><label>Ваше имя *</label><input type="text" id="checkout-name" placeholder="Иван Иванов" required></div>
@@ -823,60 +819,60 @@ border-radius: var(--radius-sm); cursor: pointer; font-weight: 600; transition: 
 </div>
 <!-- === СТРАНИЦА "СТАТЬИ" === -->
 <div id="articles-view" class="info-view fade-in">
-    <div class="page-header">
-        <h2>Полезные статьи</h2>
-        <a class="btn-back" onclick="navigateTo('presentation-view')"><i class="fa-solid fa-arrow-left"></i> Вернуться на главную</a>
-    </div>
-    <div class="about-content reveal">
-        <p style="margin-bottom: 32px; font-size: 16px; color: var(--text-muted); line-height: 1.7;">Мы собрали для вас подборку интересных и проверенных материалов о гуминовых и фульвокислотах, их влиянии на организм и применении в косметологии и wellness-практиках.</p>
-        <div class="article-grid">
-            <!-- Article 1 -->
-            <div class="article-card">
-                <div class="article-card__icon"><i class="fa-solid fa-flask-vial"></i></div>
-                <div class="article-card__content">
-                    <h3>Влияние гуминовых кислот на организм: правда или миф?</h3>
-                    <p>Разбор научных данных и популярных заблуждений о воздействии гуминовых кислот на здоровье человека.</p>
-                    <a href="https://fb.ru/article/529628/2023-vliyanie-guminovyih-kislot-na-organizm-cheloveka-pravda-ili-mif?ysclid=mvi2w1p3qj506082946" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="border-radius: 0; margin-top: auto;">Читать статью <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
-                </div>
-            </div>
-            <!-- Article 2 -->
-            <div class="article-card">
-                <div class="article-card__icon"><i class="fa-solid fa-microscope"></i></div>
-                <div class="article-card__content">
-                    <h3>Гуминовые кислоты: современные исследования</h3>
-                    <p>Обзор последних исследований и инновационных подходов к использованию гуминовых веществ в медицине и косметологии.</p>
-                    <a href="https://lens.usercontent.google.com/banana?agsi=CpUBL2Zvb3RwcmludHMtcHJvZC1zZWFyY2gtYWltLWltYWdlcy1nYWlhLWNsb25lL2dsb2JhbDo6MDAwMDU1Y2ZlYzcwMDI2ZDowMDAwMDBlYjoxOmU0NTQ2YjNmNWJkYWNkYTA6MDAwMDU1Y2ZlYzcwMDI2ZDowMDAwMDMyMzNmNDAzMzY4OjAwMDY1ZTU5MmZiYjUwMGYQAhgBIhhhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW0qEmxveWFsdHlfcHJvZ3JhbS5weQ==" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="border-radius: 0; margin-top: auto;">Читать статью <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
-                </div>
-            </div>
-            <!-- Article 3 -->
-            <div class="article-card">
-                <div class="article-card__icon"><i class="fa-solid fa-seedling"></i></div>
-                <div class="article-card__content">
-                    <h3>Что такое гуминовые кислоты и при чем тут почва?</h3>
-                    <p>Простым языком о природе гуминовых кислот, их происхождении и фундаментальной пользе для человека.</p>
-                    <a href="https://ulpressa.ru/2022/08/22/chto-takoe-guminovye-kisloty-yavlyayutsya-li-oni-lekarstvom-i-pri-chem-tut-pochva/" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="border-radius: 0; margin-top: auto;">Читать статью <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
-                </div>
-            </div>
-            <!-- Article 4 -->
-            <div class="article-card">
-                <div class="article-card__icon"><i class="fa-solid fa-droplet"></i></div>
-                <div class="article-card__content">
-                    <h3>Фульвовая кислота: природный компонент с доказанным действием</h3>
-                    <p>Миф или реальность? Подробный разбор уникальных свойств фульвовой кислоты и её роли в поддержании здоровья.</p>
-                    <a href="https://preventera.pro/fulvovaya-kislota-prirodnyj-komponent-s-dokazannym-dejstviem-dlya-organizma-cheloveka-mif-ili-realnost/?ysclid=mvi2jkhzm5434678779" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="border-radius: 0; margin-top: auto;">Читать статью <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
-                </div>
-            </div>
-            <!-- Article 5 -->
-            <div class="article-card">
-                <div class="article-card__icon"><i class="fa-solid fa-spa"></i></div>
-                <div class="article-card__content">
-                    <h3>Что особенного в торфяной грязи?</h3>
-                    <p>Уникальные свойства торфяной грязи, её богатый состав и эффективное применение в косметологии и wellness-практиках.</p>
-                    <a href="https://yudent46.ru/blog/chto-osobennogo-v-torfyanoj-gryazi" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="border-radius: 0; margin-top: auto;">Читать статью <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="page-header">
+<h2>Полезные статьи</h2>
+<a class="btn-back" onclick="navigateTo('presentation-view')"><i class="fa-solid fa-arrow-left"></i> Вернуться на главную</a>
+</div>
+<div class="about-content reveal">
+<p style="margin-bottom: 32px; font-size: 16px; color: var(--text-muted); line-height: 1.7;">Мы собрали для вас подборку интересных и проверенных материалов о гуминовых и фульвокислотах, их влиянии на организм и применении в косметологии и wellness-практиках.</p>
+<div class="article-grid">
+<!-- Article 1 -->
+<div class="article-card">
+<div class="article-card__icon"><i class="fa-solid fa-flask-vial"></i></div>
+<div class="article-card__content">
+<h3>Влияние гуминовых кислот на организм: правда или миф?</h3>
+<p>Разбор научных данных и популярных заблуждений о воздействии гуминовых кислот на здоровье человека.</p>
+<a href="https://fb.ru/article/529628/2023-vliyanie-guminovyih-kislot-na-organizm-cheloveka-pravda-ili-mif?ysclid=mvi2w1p3qj506082946" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="border-radius: 0; margin-top: auto;">Читать статью <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
+</div>
+</div>
+<!-- Article 2 -->
+<div class="article-card">
+<div class="article-card__icon"><i class="fa-solid fa-microscope"></i></div>
+<div class="article-card__content">
+<h3>Гуминовые кислоты: современные исследования</h3>
+<p>Обзор последних исследований и инновационных подходов к использованию гуминовых веществ в медицине и косметологии.</p>
+<a href="https://lens.usercontent.google.com/banana?agsi=CpUBL2Zvb3RwcmludHMtcHJvZC1zZWFyY2gtYWltLWltYWdlcy1nYWlhLWNsb25lL2dsb2JhbDo6MDAwMDU1Y2ZlYzcwMDI2ZDowMDAwMDBlYjoxOmU0NTQ2YjNmNWJkYWNkYTA6MDAwMDU1Y2ZlYzcwMDI2ZDowMDAwMDMyMzNmNDAzMzY4OjAwMDY1ZTU5MmZiYjUwMGYQAhgBIhhhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW0qEmxveWFsdHlfcHJvZ3JhbS5weQ==" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="border-radius: 0; margin-top: auto;">Читать статью <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
+</div>
+</div>
+<!-- Article 3 -->
+<div class="article-card">
+<div class="article-card__icon"><i class="fa-solid fa-seedling"></i></div>
+<div class="article-card__content">
+<h3>Что такое гуминовые кислоты и при чем тут почва?</h3>
+<p>Простым языком о природе гуминовых кислот, их происхождении и фундаментальной пользе для человека.</p>
+<a href="https://ulpressa.ru/2022/08/22/chto-takoe-guminovye-kisloty-yavlyayutsya-li-oni-lekarstvom-i-pri-chem-tut-pochva/" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="border-radius: 0; margin-top: auto;">Читать статью <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
+</div>
+</div>
+<!-- Article 4 -->
+<div class="article-card">
+<div class="article-card__icon"><i class="fa-solid fa-droplet"></i></div>
+<div class="article-card__content">
+<h3>Фульвовая кислота: природный компонент с доказанным действием</h3>
+<p>Миф или реальность? Подробный разбор уникальных свойств фульвовой кислоты и её роли в поддержании здоровья.</p>
+<a href="https://preventera.pro/fulvovaya-kislota-prirodnyj-komponent-s-dokazannym-dejstviem-dlya-organizma-cheloveka-mif-ili-realnost/?ysclid=mvi2jkhzm5434678779" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="border-radius: 0; margin-top: auto;">Читать статью <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
+</div>
+</div>
+<!-- Article 5 -->
+<div class="article-card">
+<div class="article-card__icon"><i class="fa-solid fa-spa"></i></div>
+<div class="article-card__content">
+<h3>Что особенного в торфяной грязи?</h3>
+<p>Уникальные свойства торфяной грязи, её богатый состав и эффективное применение в косметологии и wellness-практиках.</p>
+<a href="https://yudent46.ru/blog/chto-osobennogo-v-torfyanoj-gryazi" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="border-radius: 0; margin-top: auto;">Читать статью <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
+</div>
+</div>
+</div>
+</div>
 </div>
 <!-- === СТРАНИЦА "ДОСТАВКА" === -->
 <div id="delivery-view" class="info-view fade-in">
@@ -1102,20 +1098,21 @@ console.log("Firebase не настроен, используется локал
 const products = [
 { id: 1, title: 'Детокс маска для тела, 1 кг', price: 3000, oldPrice: 3500, category: ['masks', 'detox', 'sale'], badge: 'hit', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/5018ffe7-ab0c-4755-88c6-89508b18f442.jpg', description: 'Глубокое очищение и лимфодренаж. Гуминовые кислоты активно выводят токсины, снимают мышечное напряжение и отечность.', features: ['Объем: 1 кг', '98% биологически активных веществ', 'Не содержит SLS и парабенов'], usage: 'Нанести толстым слоем на очищенную влажную кожу тела. Оставить на 15-20 минут. Смыть теплой водой. Применять 1-2 раза в неделю.' },
 { id: 2, title: 'FULVIC для приёма внутрь', price: 1999, oldPrice: null, category: ['food', 'detox'], badge: 'new', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/bdYpikLCeoJ5j1W9kbXtXqgZxUlEfl_PqjqCKvFut6GrBz1ex0PraiYvlFgmXSNnbG_YeJJhYQ8OqJ0JxFuneyVC.jpg', description: 'Мягкий физиологический корректор на основе фульвокислот. Поддерживает микробиом кишечника, способствует естественной детоксикации.', features: ['100% натуральный состав', 'Поддержка иммунитета', 'Улучшение состояния кожи изнутри'], usage: 'Развести 5 мл в стакане воды комнатной температуры. Принимать утром натощак за 30 минут до еды.' },
-{ id: 3, title: 'Маска для лица увлажняющая', price: 899, oldPrice: 1199, category: ['masks', 'skin', 'sale'], badge: 'hit', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/52c88945-a20b-4de0-ba84-2e10d0f6d39a.jpg', description: 'Интенсивное увлажнение и питание кожи лица. Гиалуроновая кислота и экстракт алоэ вера восстанавливают водный баланс.', features: ['Объем: 100 мл', 'Для всех типов кожи', 'Без парабенов'], usage: 'Нанести на очищенную кожу лица, избегая области вокруг глаз. Оставить на 15-20 минут. Смыть теплой водой.' },
+{ id: 3, title: 'Маска для лица увлажняющая', price: 340, oldPrice: null, category: ['masks', 'skin', 'sale'], badge: 'hit', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/52c88945-a20b-4de0-ba84-2e10d0f6d39a.jpg', description: 'Интенсивное увлажнение и питание кожи лица. Гиалуроновая кислота и экстракт алоэ вера восстанавливают водный баланс.', features: ['Объем: 100 мл', 'Для всех типов кожи', 'Без парабенов'], usage: 'Нанести на очищенную кожу лица, избегая области вокруг глаз. Оставить на 15-20 минут. Смыть теплой водой.' },
 { id: 4, title: 'Термозащита для волос', price: 1299, oldPrice: null, category: ['hair', 'care'], badge: null, image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/ee459c85-30f5-43ce-abbb-1a52d3eb21ae.jpg', description: 'Защита волос от высоких температур при укладке. Натуральные масла питают и укрепляют волосы.', features: ['Объем: 200 мл', 'Защита до 230°C', 'Не утяжеляет волосы'], usage: 'Распылить на влажные или сухие волосы перед использованием фена, утюжка или плойки.' },
 { id: 5, title: 'Масло для волос восстанавливающее', price: 1599, oldPrice: 1899, category: ['hair', 'care', 'sale'], badge: 'top', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/a759cb1d-70ce-48ee-a6b7-8d1e8cf8a407.jpg', description: 'Восстановление поврежденных и сухих волос. Комплекс натуральных масел питает и придает блеск.', features: ['Объем: 100 мл', 'Аргановое и кокосовое масла', 'Для всех типов волос'], usage: 'Нанести небольшое количество на кончики влажных или сухих волос. Не смывать.' },
-{ id: 6, title: 'Скраб для тела кофейный', price: 1199, oldPrice: null, category: ['care'], badge: null, image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/7e10a354-31cf-4341-bbec-9782cb145bdd.jpg', description: 'Натуральный кофейный скраб для обновления кожи. Кофеин стимулирует кровообращение и борется с целлюлитом.', features: ['Объем: 250 г', 'Натуральный кофе', 'Масло кокоса и миндаля'], usage: 'Нанести на влажную кожу массажными движениями. Смыть теплой водой. Использовать 2-3 раза в неделю.' },
+{ id: 6, title: 'Скраб для тела кофейный', price: 829, oldPrice: null, category: ['care'], badge: null, image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/7e10a354-31cf-4341-bbec-9782cb145bdd.jpg', description: 'Натуральный кофейный скраб для обновления кожи. Кофеин стимулирует кровообращение и борется с целлюлитом.', features: ['Объем: 250 г', 'Натуральный кофе', 'Масло кокоса и миндаля'], usage: 'Нанести на влажную кожу массажными движениями. Смыть теплой водой. Использовать 2-3 раза в неделю.' },
 { id: 7, title: 'Крем для лица дневной', price: 2499, oldPrice: null, category: ['skin', 'care'], badge: 'new', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/5096e8be-dd56-46fc-ac98-1f776ce325b3.jpg', description: 'Дневной крем с SPF 30 для защиты и увлажнения кожи. Легкая текстура, подходит под макияж.', features: ['Объем: 50 мл', 'SPF 30', 'Для всех типов кожи'], usage: 'Нанести на очищенную кожу лица утром. Можно использовать как базу под макияж.' },
-{ id: 8, title: 'Маска для волос питательная', price: 1399, oldPrice: 1699, category: ['hair', 'care', 'masks', 'sale'], badge: 'hit', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/8920edbe-8735-4438-8942-fa07910c4079.jpg', description: 'Интенсивное питание и восстановление волос. Кератин и протеины шелка укрепляют волосы изнутри.', features: ['Объем: 300 мл', 'Кератин и протеины', 'Для поврежденных волос'], usage: 'Нанести на чистые влажные волосы, отступая от корней 5 см. Оставить на 10-15 минут. Смыть.' },
+{ id: 8, title: 'Маска для волос питательная', price: 199, oldPrice: null, category: ['hair', 'care', 'masks', 'sale'], badge: 'hit', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/8920edbe-8735-4438-8942-fa07910c4079.jpg', description: 'Интенсивное питание и восстановление волос. Кератин и протеины шелка укрепляют волосы изнутри.', features: ['Объем: 300 мл', 'Кератин и протеины', 'Для поврежденных волос'], usage: 'Нанести на чистые влажные волосы, отступая от корней 5 см. Оставить на 10-15 минут. Смыть.' },
 { id: 9, title: 'Гель для умывания', price: 799, oldPrice: null, category: ['care', 'skin'], badge: null, image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/3e6aae73-8b92-44e4-97ea-5f26fef17540.jpg', description: 'Мягкое очищение кожи лица без пересушивания. Подходит для ежедневного использования.', features: ['Объем: 200 мл', 'pH-нейтральный', 'Для чувствительной кожи'], usage: 'Нанести небольшое количество на влажную кожу лица, вспенить и смыть теплой водой. Использовать утром и вечером.' },
-{ id: 10, title: 'Детокс-обертывание для тела', price: 2899, oldPrice: 3299, category: ['detox', 'care', 'sale'], badge: 'top', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/5096e8be-dd56-46fc-ac98-1f776ce325b3.jpg', description: 'Интенсивное обертывание для выведения токсинов и уменьшения объемов тела. Активные компоненты стимулируют лимфодренаж.', features: ['Объем: 500 мл', 'Гуминовые кислоты', 'Антицеллюлитный эффект'], usage: 'Нанести на проблемные зоны, обернуть пленкой. Оставить на 30-40 минут. Смыть теплой водой.' },
+{ id: 10, title: 'Детокс-обертывание для тела', price: 2899, oldPrice: 3299, category: ['detox', 'care', 'sale'], badge: 'top', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/29301844-e6f7-4844-bf11-f2e6b85c0849.jpg', description: 'Интенсивное обертывание для выведения токсинов и уменьшения объемов тела. Активные компоненты стимулируют лимфодренаж.', features: ['Объем: 500 мл', 'Гуминовые кислоты', 'Антицеллюлитный эффект'], usage: 'Нанести на проблемные зоны, обернуть пленкой. Оставить на 30-40 минут. Смыть теплой водой.' },
 { id: 11, title: 'Тоник для лица', price: 999, oldPrice: null, category: ['skin', 'care'], badge: null, image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/08facbf6-2f1c-417c-af7b-7867527e4093.jpg', description: 'Освежающий тоник для завершения этапа очищения. Восстанавливает pH-баланс кожи.', features: ['Объем: 250 мл', 'Без спирта', 'Для всех типов кожи'], usage: 'Нанести на ватный диск и протереть лицо после умывания. Использовать утром и вечером.' },
-{ id: 12, title: 'Сыворотка для лица с витамином C', price: 3499, oldPrice: 3999, category: ['skin', 'care', 'sale'], badge: 'hit', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/2e37830b-14a4-4ba8-8ea6-c0a1304924bb.jpg', description: 'Антиоксидантная сыворотка с витамином C для сияния кожи. Осветляет пигментацию и выравнивает тон.', features: ['Объем: 30 мл', '20% витамин C', 'Для всех типов кожи'], usage: 'Нанести 3-4 капли на очищенную кожу лица утром перед кремом. Избегать попадания в глаза.' },
+{ id: 12, title: 'Сыворотка для лица с витамином C', price: 800, oldPrice: null, category: ['skin', 'care', 'sale'], badge: 'hit', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/2e37830b-14a4-4ba8-8ea6-c0a1304924bb.jpg', description: 'Антиоксидантная сыворотка с витамином C для сияния кожи. Осветляет пигментацию и выравнивает тон.', features: ['Объем: 30 мл', '20% витамин C', 'Для всех типов кожи'], usage: 'Нанести 3-4 капли на очищенную кожу лица утром перед кремом. Избегать попадания в глаза.' },
 { id: 13, title: 'Подарочный набор "Сияние"', price: 4500, oldPrice: 5200, category: ['gifts', 'sale'], badge: 'hit', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/2e26fd9e-8c2d-432a-86d7-d98e21aaa189.jpg', description: 'Изысканный набор для глубокого ухода и сияния кожи. Включает маску для лица, сыворотку и увлажняющий крем в премиальной упаковке.', features: ['Премиальная подарочная упаковка', '3 полноразмерных продукта', 'Идеально для особенного случая'], usage: 'Используйте продукты по очереди: сначала сыворотка, затем крем, 1-2 раза в неделю добавляйте маску для максимального эффекта.' },
 { id: 14, title: 'Подарочный набор "Детокс"', price: 3800, oldPrice: null, category: ['gifts', 'detox'], badge: 'new', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/8360bd51-2485-4a9e-bcc7-a6ef0c467b48.jpg', description: 'Комплексное очищение и обновление организма изнутри и снаружи. Маска для тела и пищевая добавка на основе фульвокислот.', features: ['Двойное действие (внутрь и снаружи)', 'Экологичная подарочная упаковка', 'Сертификат натуральности в комплекте'], usage: 'Принимайте добавку утром натощак, а маску для тела используйте вечером 2 раза в неделю для глубокого очищения.' },
 { id: 15, title: 'Подарочный набор "Сила природы"', price: 2900, oldPrice: 3400, category: ['gifts', 'hair', 'sale'], badge: 'top', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/bdb3a4e2-1808-475a-aa43-10fc31a18a31.jpg', description: 'Полноценный ритуал красоты для ваших волос. Питательная маска и восстанавливающее масло с натуральными экстрактами.', features: ['Зеркальный блеск и сила', 'Натуральные масла в составе', 'Подходит для всех типов волос'], usage: 'Нанесите маску на чистые влажные волосы на 15 минут, смойте. На подсушенные кончики нанесите несколько капель масла.' },
-{ id: 16, title: 'Подарочный набор "Абсолютная гармония"', price: 5500, oldPrice: 6500, category: ['gifts', 'care', 'sale'], badge: 'hit', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/be12e76e-56f3-4dac-9f76-bf855e123187.jpg', description: 'Максимальная забота о себе. Полный набор уходовых средств для лица и тела в роскошной подарочной коробке с открыткой.', features: ['4 полноразмерных продукта в наборе', 'Роскошная подарочная коробка', 'Персональная открытка с пожеланием'], usage: 'Используйте средства ежедневно в комплексе для достижения максимального эффекта гармонии, увлажнения и сияния.' }
+{ id: 16, title: 'Подарочный набор "Абсолютная гармония"', price: 5500, oldPrice: 6500, category: ['gifts', 'care', 'sale'], badge: 'hit', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/be12e76e-56f3-4dac-9f76-bf855e123187.jpg', description: 'Максимальная забота о себе. Полный набор уходовых средств для лица и тела в роскошной подарочной коробке с открыткой.', features: ['4 полноразмерных продукта в наборе', 'Роскошная подарочная коробка', 'Персональная открытка с пожеланием'], usage: 'Используйте средства ежедневно в комплексе для достижения максимального эффекта гармонии, увлажнения и сияния.' },
+{ id: 17, title: 'Наклад', price: 1090, oldPrice: null, category: ['care'], badge: 'new', image: 'https://stynjejvjpawvqbycjna.supabase.co/storage/v1/object/public/photo/ef38b4ef-4b01-4c53-8884-684265417595.jpg', description: 'Инновационный продукт для ухода. Высокое качество и натуральные компоненты для эффективного действия.', features: ['Высокое качество', 'Натуральные компоненты', 'Эффективное действие'], usage: 'Используйте согласно инструкции.' }
 ];
 // === STATE MANAGEMENT ===
 const Store = {
